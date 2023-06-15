@@ -14,7 +14,7 @@ int main(void)
 
 	for (lc = 97; lc < 123; lc++)
 		putchar(lc);
-	for (uc = 65; lc < 91; lc++)
+	for (uc = 65; uc < 91; uc++)
 		putchar(uc);
 	putchar(10);
 	return (0);
