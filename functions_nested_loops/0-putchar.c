@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main
- * description
- * Return
+ * main - initialization
+ * description: puthcar
+ * Return: 0
  */
 
 int main(void)
 {
-	putchar('_putchar');
+	_putchar(c);
 	return (0);
 }
