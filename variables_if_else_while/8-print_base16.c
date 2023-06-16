@@ -14,7 +14,7 @@ int main(void)
 
 	for (hx = 48; hx < 58; hx++)
 		putchar(hx);
-	for (lc = 97; lc < 123; lc++)
+	for (lc = 97; lc < 102; lc++)
 		putchar(lc);
 	putchar(10);
 	return (0);
