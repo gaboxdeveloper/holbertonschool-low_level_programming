@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - initialization
- * print_alphabet: lalalala
- * description: puthcar
+ * print_alphabet - function for print the alphabet
+ *
  * Return: 0
  */
 
