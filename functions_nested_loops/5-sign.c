@@ -3,7 +3,7 @@
 /**
  * print_sign - function
  *
- * parameter 'n': lalalala
+ * @n: asdasd
  *
  * Return: 0
  */
