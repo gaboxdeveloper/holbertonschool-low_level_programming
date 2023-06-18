@@ -10,15 +10,12 @@
 
 int _abs(int n)
 {
-	unsigned int a;
-
 	if (n == 0)
-		return(n);
+		return (0);
 	else if (n < 0)
 	{
-		a = n;
-		return(a);
+		return (n * -1);
 	}
 	else
-		return(n);
+		return (n);
 }
