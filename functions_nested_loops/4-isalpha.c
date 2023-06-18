@@ -3,6 +3,7 @@
 /**
  * _isalpha - function to know if a characer is in the alphabet
  *
+ * @c: letter lowercase and uppercase
  * Return: 0
  */
 
