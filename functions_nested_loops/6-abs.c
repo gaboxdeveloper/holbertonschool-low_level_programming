@@ -13,13 +13,12 @@ int _abs(int n)
 	unsigned int a;
 
 	if (n == 0)
-		_putchar(n);
+		return(n);
 	else if (n < 0)
 	{
 		a = n;
-		_putchar(a);
+		return(a);
 	}
 	else
-		_putchar(n);
-	return (0);
+		return(n);
 }
