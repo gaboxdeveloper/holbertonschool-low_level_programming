@@ -18,8 +18,11 @@ void print_to_98(int n)
 		for (a = n; a < 99; a++)
 		{
 			printf("%d", a);
-			putchar(',');
-			putchar(' ');
+			if (a != 98)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			if (a == 98)
 				putchar('\n');
 		}
@@ -29,8 +32,11 @@ void print_to_98(int n)
 		for (a = n; a > 97; a--)
 		{
 			printf("%d", a);
-			putchar(',');
-			putchar(' ');
+			if (a != 98)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			if (a == 98)
 				putchar('\n');
 		}
