@@ -21,7 +21,7 @@ void print_to_98(int n)
 			putchar(',');
 			putchar(' ');
 			if (a == 98)
-				break;
+				putchar('\n');
 		}
 	}
 	else if (n > 98)
@@ -32,7 +32,7 @@ void print_to_98(int n)
 			putchar(',');
 			putchar(' ');
 			if (a == 98)
-				break;
+				putchar('\n');
 		}
 	}
 	else
