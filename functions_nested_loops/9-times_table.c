@@ -8,15 +8,21 @@
 
 void times_table(void)
 {
-	int n, x;
+	int n, x, p;
 
 	for (n = 0; n < 10; n++)
 	{
 		for (x = 0; x < 10; x++)
 		{
-			_putchar(' ');
-			_putchar((n * x) + '0');
+			p = x * n;
+
+			if (p <= 9)
+				_putchar(' ');
+			else
+				_putchar((p / 10) + '0');
+			_putchar((p % 10) + '0');
 			_putchar(',');
 		}
+		_putchar(10);
 	}
 }
