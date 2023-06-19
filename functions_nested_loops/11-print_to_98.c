@@ -20,6 +20,8 @@ void print_to_98(int n)
 			printf("%d", a);
 			putchar(',');
 			putchar(' ');
+			if (a == 98)
+				break;
 		}
 	}
 	else if (n > 98)
@@ -29,8 +31,13 @@ void print_to_98(int n)
 			printf("%d", a);
 			putchar(',');
 			putchar(' ');
+			if (a == 98)
+				break;
 		}
 	}
 	else
+	{
 		printf("%d", 98);
+		putchar('\n');
+	}
 }
