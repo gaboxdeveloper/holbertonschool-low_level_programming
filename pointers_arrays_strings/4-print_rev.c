@@ -7,8 +7,12 @@
 
 void print_rev(char *s)
 {
-	int i;
+	int c;
 
-	for (i = s['\0']; s[i] == 0; i--)
-		_putchar(s[i]);
+	for (c = 0; s[c] != '\0'; c++)
+	{
+		c--;
+		for (; c > 0; c--)
+			_putchar(c[s]);
+	}
 }
