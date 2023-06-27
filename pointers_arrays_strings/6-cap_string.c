@@ -8,28 +8,33 @@
  * Return: Uppercase letter
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i, a, c;
-	char Array[] = {',', ';', '.', '!', '?', '(', ')', '{', '}', '"', ' '};
-	
-	c = 32;
+	int index = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[index])
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-		{
-			s[i] = s[i] - c;
-		}
-		c = 0;
-		for (a = 0; Array[a] != '\0'; a++)
-		{
-			if (Array[a] == s[i])
-			{
-				c = 32;
-				break;
-			}
-		}
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (s);
+
+	return (str);
 }
