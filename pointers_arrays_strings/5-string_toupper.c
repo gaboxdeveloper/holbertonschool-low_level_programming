@@ -5,7 +5,7 @@
  *
  * @hola: parameter
  *
- * Return: Lowercase letter
+ * Return: Uppercase letter
  */
 
 char *string_toupper(char *hola)
@@ -13,9 +13,9 @@ char *string_toupper(char *hola)
 	int i;
 
 	for (i = 0; hola[i] != '\0'; i++)
-		;
-
-	if ((hola[i] >= 97) && (hola[i] <= 122))
-		hola[i] -= 32;
+	{
+		if ((hola[i] >= 97) && (hola[i] <= 122))
+			hola[i] -= 32;
+	}
 	return (hola);
 }
