@@ -3,7 +3,7 @@
 /**
  * cap_string - function
  *
- * @s: parameter
+ * @str: parameter
  *
  * Return: Uppercase letter
  */
