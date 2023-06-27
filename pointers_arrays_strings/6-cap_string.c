@@ -10,15 +10,25 @@
 
 char *cap_string(char *s)
 {
-	int i, a;
+	int i, a, c;
 	char Array[] = {',', ';', '.', '!', '?', '(', ')', '{', '}', '"', ' '};
+	
+	c = 32;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (a = 0; Array[a] <= 10; a++)
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			if (s[i] == Array[a] && s[i + 1] >= 97 && s[i + 1] <= 122)
-				s[i + 1] -= 32;
+			s[i] = s[i] - c;
+		}
+		c = 0;
+		for (a = 0; Array[a] != '\0'; a++)
+		{
+			if (Array[a] == s[i])
+			{
+				c = 32;
+				break;
+			}
 		}
 	}
 	return (s);
