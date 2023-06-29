@@ -1,4 +1,4 @@
 #!/bin/bash
-gcc -c ./*.c
+makefile
 ar rcs liball.a ./*.o
 ranlib liball.a 
