@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int c;
 	int a = atoi(argv[1]);
