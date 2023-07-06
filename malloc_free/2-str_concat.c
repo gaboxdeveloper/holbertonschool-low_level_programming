@@ -16,8 +16,8 @@ char *str_concat(char *s1, char *s2)
 
 	s12 = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	//if (s1 == NULL || s2 == NULL)
+		//return (NULL);
 
 	for (a = 0; s1[a]; a++)
 		s12++;
