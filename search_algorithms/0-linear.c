@@ -22,4 +22,6 @@ linear_search(int *array, size_t size, int value)
 	}
 	if (isPresent == 0)
 		return (-1);
+	else
+		return (0);
 }
