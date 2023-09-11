@@ -16,7 +16,10 @@ binary_search(int *array, size_t size, int value)
 
 		printf("Searching in subarray: ");
 		for (i = inicio; i <= fin; i++)
-			printf("%d, ", array[i]);
+			if (i != fin)
+				printf("%d, ", array[i]);
+			else if (i == fin)
+				printf("%d", array[i]);
 
 		printf("\n");
 
